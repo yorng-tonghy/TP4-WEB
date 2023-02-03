@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter;
+}
+
+nav {
+  width: 100%;
+  height: 60px;
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav .logo {
+  color: white;
+}
+
+nav .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2px;
+}
+
+nav .icon:hover {
+  background-color: red;
+}
+
+nav .icon .line1 {
+  width: 15px;
+  height: 2px;
+  background-color: white;
+}
+
+nav .icon .line2 {
+  width: 15px;
+  height: 2px;
+  background-color: white;
+}
+
+nav .icon .line3 {
+  width: 15px;
+  height: 2px;
+  background-color: white;
+}
+
+.sidebar {
+  background-color: #0f0f0e;
+  width: 20rem;
+  height: 25rem;
+  margin-top: 2rem;
+  position: fixed;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sidebar .bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: black;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+  color: white;
+}
+
+.sidebar .bar i:hover {
+  color: red;
+}
+
+.sidebar .sidebar__content {
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5rem;
+}
+
+.sidebar .sidebar__content .bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar .sidebar__content a {
+  text-decoration: none;
+  color: white;
+}
+
+.sidebar .sidebar__content a:hover {
+  color: red;
+  background-color: white;
+  width: 100%;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.toggle {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+/*# sourceMappingURL=style.css.map */

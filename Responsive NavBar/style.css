@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  font-family: Poppins;
+}
+
+nav {
+  background-color: #262728;
+  height: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+nav .nav__page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5rem;
+}
+
+nav .nav__page a {
+  text-decoration: none;
+  color: white;
+}
+
+nav .nav__page a:hover {
+  color: #ff3c00;
+}
+
+nav .nav__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+}
+
+nav .nav__icon a {
+  text-decoration: none;
+  color: white;
+}
+
+nav .nav__icon a:hover {
+  color: #ff3c00;
+}
+
+nav .nav__button {
+  display: none;
+}
+
+nav .nav__button a {
+  text-decoration: none;
+  color: black;
+}
+
+nav .nav__button a:hover {
+  color: white;
+}
+
+@media screen and (max-width: 1000px) {
+  nav .nav__icon {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  nav .nav__button {
+    display: block;
+  }
+  nav .nav__button:hover {
+    color: red;
+  }
+  nav .nav__page {
+    position: fixed;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 70px;
+    gap: 0;
+    background-color: #0c0c0c;
+    color: white;
+    text-align: center;
+    -webkit-transition: .3s;
+    transition: .3s;
+    width: 100%;
+  }
+  nav .nav__page a {
+    margin: 16px 0;
+    color: white;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  nav .nav__page a:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    background-color: white;
+    color: red;
+    padding: .8rem;
+  }
+  nav .toggle {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=style.css.map */
